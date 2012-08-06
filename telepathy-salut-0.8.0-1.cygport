@@ -1,0 +1,21 @@
+inherit gnome2
+
+CATEGORY="Net"
+SUMMARY="Telepathy link-local XMPP connection manager"
+DESCRIPTION="Salut is a link-local XMPP (XEP-0174) connection manager for the
+Telepathy framework, currently supporting presence and single-user chats
+with iChat interoperability, and multi-user chats and Tubes using the
+Clique protocol."
+HOMEPAGE="http://telepathy.freedesktop.org/wiki/"
+SRC_URI="http://telepathy.freedesktop.org/releases/${PN}/${P}.tar.gz"
+
+PATCH_URI="
+	0.8.0-exeext.patch
+	0.8.0-cygwin.patch
+"
+
+DIFF_EXCLUDES="reference gtk-doc.make"
+
+CYGCONF_ARGS="--libexecdir=/usr/lib/telepathy --enable-olpc"
+
+KEEP_LA_FILES="none"

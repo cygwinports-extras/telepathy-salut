@@ -1,0 +1,11 @@
+--- origsrc/telepathy-salut-0.8.0/configure.ac	2012-04-04 11:36:21.000000000 -0500
++++ src/telepathy-salut-0.8.0/configure.ac	2012-05-07 20:56:47.627651400 -0500
+@@ -42,7 +42,7 @@ SALUT_ARG_COVERAGE
+ dnl Detect Windows Verion
+ AC_MSG_CHECKING([for operating system])
+ case "$host" in
+-  *-*-*mingw*|*-*-*cygwin*)
++  *-*-*mingw*)
+     platform=win32
+     ;;
+   *)
