@@ -1,5 +1,8 @@
 inherit gnome2
 
+NAME="telepathy-salut"
+VERSION=0.8.0
+RELEASE=2
 CATEGORY="Net"
 SUMMARY="Telepathy link-local XMPP connection manager"
 DESCRIPTION="Salut is a link-local XMPP (XEP-0174) connection manager for the
