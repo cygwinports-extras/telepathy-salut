@@ -19,5 +19,5 @@ PATCH_URI="
 
 DIFF_EXCLUDES="reference gtk-doc.make"
 
-CYGCONF_ARGS="--libexecdir=/usr/lib/telepathy --enable-olpc"
+CYGCONF_ARGS="--enable-olpc"
 
